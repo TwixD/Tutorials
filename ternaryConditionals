@@ -1,0 +1,20 @@
+Ternary conditional
+
+Provides a shortcut over lengthier conditional blocks 
+
+var assignVar = someCondition ? true : false;
+
+- Compound expressions
+
+isAny && another ? true : false;
+
+- Multiple actions 
+
+var1  && var2 ? (res1 = 'a', res2 = 'c') : (res1 = 'a', res = 1)
+
+
+- Can be Nested(Anidado)
+
+firstVar && secondVar ? (res1 = 'shit',res2 = 'fuck')
+			:
+			thirdVar ? 'holy shit' : 'omg'

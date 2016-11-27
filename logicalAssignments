@@ -1,0 +1,59 @@
+Logical assignment 
+
+
+
+The || OR Operator
+
+When used in assigment, the OR operator will try to select 
+the first value it encounters that is not "falsy"
+
+var swords;
+
+var obj = {
+  addSword : function(word){
+    swords = swords || []; // <-- Logical assignment
+    swords.push(word);
+  }
+};
+obj.addSword('Magical stick');"
+
+
+
+
+The AND Operator
+
+The && operator takes the rightmost "truthy" value or the first "falsy" value.
+
+var result1 = undefined && 42 ;
+console.log(result1);
+
+-> undefined
+
+var result2 = 0 && ["Sweet", "array"] ;
+console.log(result2);
+
+-> 0
+
+
+When all elements are “truthy”, && will return the LAST “truthy” value found.
+
+var result1 = "King" && "Arthur" ;
+console.log(result1);
+
+-> Arthur
+
+When all elements are “falsy”, AND will return the FIRST “falsy” value found.
+	
+var result1 = undefined && "" ;
+console.log(result1);
+
+-> undefined
+
+
+
+
+
+
+
+
+
